@@ -4,7 +4,7 @@ import axios from 'axios';
 import L from 'leaflet';
 
 import Layout from 'components/Layout';
-import Container from 'components/Container';
+//import Container from 'components/Container';
 import Map from 'components/Map';
 
 
