@@ -2,12 +2,12 @@
 apiVersion: build.openshift.io/v1
 metadata:
   name: coronavirus-map
-  namespace: covid-map
+#  namespace: covid-map
   selfLink: >-
     /apis/build.openshift.io/v1/namespaces/covid-map/buildconfigs/coronavirus-map
-  uid: da2abea7-1099-4a34-8248-ff3e2f22c51d
-  resourceVersion: '734286'
-  creationTimestamp: '2020-06-12T04:38:00Z'
+#   uid: da2abea7-1099-4a34-8248-ff3e2f22c51d
+#  resourceVersion: '734286'
+#  creationTimestamp: '2020-06-12T04:38:00Z'
   labels:
     app: coronavirus-map
     app.kubernetes.io/component: coronavirus-map
@@ -27,8 +27,8 @@ spec:
       kind: ImageStreamTag
       name: 'coronavirus-map:latest'
   resources: {}
-  successfulBuildsHistoryLimit: 5
-  failedBuildsHistoryLimit: 5
+#  successfulBuildsHistoryLimit: 5
+#  failedBuildsHistoryLimit: 5
   strategy:
     type: Source
     sourceStrategy:
@@ -56,11 +56,11 @@ spec:
       github:
         secretReference:
           name: coronavirus-map-github-webhook-secret
-    - type: ImageChange
-      imageChange:
-        lastTriggeredImageID: >-
-          image-registry.openshift-image-registry.svc:5000/openshift/modern-webapp@sha256:eb672caddbf6f1d2283ecc2e7f69142bd605f5a0067c951dd9b829f29343edc4
+#    - type: ImageChange
+#      imageChange:
+#        lastTriggeredImageID: >-
+#          image-registry.openshift-image-registry.svc:5000/openshift/modern-webapp@sha256:eb672caddbf6f1d2283ecc2e7f69142bd605f5a0067c951dd9b829f29343edc4
     - type: ConfigChange
   runPolicy: Serial
-status:
-  lastVersion: 2
+#status:
+#  lastVersion: 2
