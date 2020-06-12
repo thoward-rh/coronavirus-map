@@ -9,11 +9,11 @@ import Map from 'components/Map';
 
 
 const LOCATION = {
-  lat: 0,
-  lng: 0,
+  lat: 15.87,
+  lng: 100.99,
 };
 const CENTER = [LOCATION.lat, LOCATION.lng];
-const DEFAULT_ZOOM = 1;
+const DEFAULT_ZOOM = 3;
 
 const IndexPage = () => {
 
