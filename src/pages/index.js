@@ -96,7 +96,7 @@ const IndexPage = () => {
             ${ casesString }
           </span>
         `;
-    
+  
         return L.marker( latlng, {
           icon: L.divIcon({
             className: 'icon',
